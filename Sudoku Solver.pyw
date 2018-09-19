@@ -9,7 +9,7 @@ Font = pygame.font.SysFont('Impact Regular', 40)
 Blue = (0, 0, 255)
 White = (255, 255, 255)
 Black = (0, 0, 0)
-File = open('C:\\Users\\Sachin\\Desktop\\Programming\\Python\\Program Related Stuff\\Sudoku Solver Files\\Sudoku_Input.txt', 'r')
+File = open('C:\\Users\\NAME\\Desktop\\Programming\\Python\\Program Related Stuff\\Sudoku Solver Files\\Sudoku_Input.txt', 'r')
 
 
 def Update():

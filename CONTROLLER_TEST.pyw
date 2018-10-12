@@ -1,5 +1,4 @@
-#! python3.2
-import pygame, sys, random, math, pygame.gfxdraw
+import pygame, sys, random, math
 from pygame.locals import *
 pygame.init()
 pygame.joystick.init()

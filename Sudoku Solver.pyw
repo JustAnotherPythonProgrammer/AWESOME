@@ -1,4 +1,3 @@
-#! python3.2
 import pygame, random, sys, datetime
 from pygame.locals import *
 pygame.init()

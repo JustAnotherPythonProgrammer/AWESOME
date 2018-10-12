@@ -1,4 +1,3 @@
-#!python3.2
 #Imports and Initialization
 import pygame, sys, random
 from pygame.locals import *

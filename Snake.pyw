@@ -1,4 +1,3 @@
-#! python3.2
 import pygame, sys, random, copy
 from pygame.locals import *
 pygame.init()

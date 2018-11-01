@@ -2,8 +2,6 @@ import youtube_dl, mutagen, datetime, os
 from mutagen.id3 import ID3, TIT2, TALB, TPE1
 os.chdir('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Output')
 Links = open('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Links.txt', 'r')
-LogFile = open('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Log.txt', 'w')
-LogFile.seek(0, 2)
 
 Songs = []
 
@@ -33,9 +31,11 @@ def AddMetaData():
     for Song in Songs:
         Tags = ID3('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Output\\' + Song['FileName'] + '.mp3')
         Tags['TIT2'] = TIT2(3, Song['Name'])
-        Tags['TALB'] = TALB(3, Song['Album'])
+        if Song['Album'] != 'NONE':
+            Tags['TALB'] = TALB(3, Song['Album'])
         Tags['TPE1'] = TPE1(3, Song['Artist'])
         Tags.save()
+        
 GetData(Links)
 Download()
 AddMetaData()

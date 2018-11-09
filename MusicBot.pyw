@@ -1,4 +1,4 @@
-import youtube_dl, mutagen, datetime, os
+import youtube_dl, mutagen, os
 from mutagen.id3 import ID3, TIT2, TALB, TPE1
 os.chdir('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Output')
 Links = open('C:\\Users\\User\\Desktop\\Programming\\Python\\ProgramRelatedStuff\\MusicBotFiles\\Links.txt', 'r')
